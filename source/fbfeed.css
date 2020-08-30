@@ -1,0 +1,115 @@
+body
+{
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 11px;
+    color: #333;
+    line-height: 1.28;
+    text-align: left;
+    direction: ltr;
+}
+
+li,
+ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+li
+{
+    list-style: none;
+}
+
+a
+{
+    cursor: pointer;
+    color: #3B5998;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#fbFeedbackContent .top
+{
+    padding-top: -10px;
+    
+    
+}
+
+#fbFeedbackContent .top a
+{
+    float: right;
+}
+
+#fbFeedbackContent li
+{
+    padding: 10px 0;
+    border-bottom: 1px #E2E2E2 solid;
+}
+
+#fbFeedbackContent li li
+{
+    margin-left: 60px;
+    border-bottom: none;
+    margin-top: 5px;
+    border-top: 1px #E2E2E2 solid;
+}
+
+#fbFeedbackContent span
+{
+    color: grey;
+}
+
+#fbFeedbackContent .postContainer
+{
+    display: table-cell;
+    vertical-align: top;
+    width: 10000px;
+}
+
+#fbFeedbackContent .image
+{
+    float: left;
+    background-color: #EDEDED;
+    margin-bottom: 8px;
+    margin-right: 11px;
+}
+
+#fbFeedbackContent .bottom
+{
+    color: gray;
+}
+
+#fbFeedbackContent .bottom a
+{
+    font-weight: normal;
+}
+
+#fbFeedbackContent .bottom .like i
+{
+    background: url(../img/sprite.png);
+    background-position: -33px -170px;
+    display: inline-block;
+    width: 15px;
+    height: 13px;
+}
+
+.uiLinkSubtle
+{
+    display: block;
+    color: gray;
+    font-weight: normal;
+    font-size: 9px;
+    margin-top: 6px;
+}
+
+.uiLinkSubtleIcon
+{
+    float: left;
+    display: block;
+    background: url(../img/sprite.png);
+    background-position: 0px -187px;
+    height: 14px;
+    width: 14px;
+    margin-right: 5px;
+    margin-top: 5px;
+}

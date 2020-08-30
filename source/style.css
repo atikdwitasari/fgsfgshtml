@@ -1,0 +1,216 @@
+#body{
+    width: 100%;
+    padding: 50px 0;
+    margin: 0px;
+    background-image: url(../source/latar.png);
+}
+
+.panel{
+    outline: none;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    font: 13px/1.55 'Open Sans',Helvetica,Arial,sans-serif;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+	
+}
+
+#description .row{
+    padding-bottom: 20px;
+    
+}
+
+.panel-header{
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    background: rgba(248,248,248,.9);
+    font-size: 25px;
+    font-weight: 300;
+    color: #232323;
+    text-align: center;
+}
+
+code.command {
+    color: #fff; 
+    font-weight: bold; 
+    background-color:#000;
+    font-family: monospace;
+    display: inline-block;
+    margin: 6px 6px 6px 6px;
+    padding: 12px 12px 12px 12px;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    width: 100%;
+    min-height: 400px;
+}
+
+.dl_button {
+    display: block;
+    background: -webkit-linear-gradient(#ffd34c, #fcb326); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffd34c, #fcb326); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffd34c, #fcb326); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffd34c, #fcb326); /* Standard syntax (must be last) */
+    background-color: #fcb326;
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.5%;
+    padding-top: 2%;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #ffd34c;
+    width: 85%;
+    margin-top: 25px;
+}
+.dl_button:hover {
+    background: -webkit-linear-gradient(#fcb326, #ffd34c); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fcb326, #ffd34c); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fcb326, #ffd34c); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff526, #ffd34c); /* Standard syntax (must be last) */
+}
+div.panel-footer{
+    background: none repeat scroll 0 0 rgba(248, 248, 248, 0.9);
+    display: block;
+    padding: 15px 30px 25px;
+}
+
+.echoSoc_wrap, .echoSoc_overlay {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.echoSoc_wrap {
+  z-index: 999999999;
+  display: none;
+}
+
+.echoSoc_overlay {
+  z-index: 777777;
+  background: #555;
+  opacity: .7;
+  display: none;
+}
+
+.echoSoc_frame {
+  background-color: #eee;
+  width: 400px;
+  position: absolute;
+  text-align: center;
+  border-radius: 3px;
+  z-index: 888888;
+  overflow: hidden;
+  display: none;
+  box-shadow: 0 0 0 1px #fff, 0 0 5px 2px rgba(0, 0, 0, .3);
+}
+
+.echoSoc_title {
+  background-color: #333;
+  position: relative;
+  padding: 4px 0;
+}
+
+.echoSoc_title h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 26px;
+  margin: 3px 0;
+}
+
+/*.echoSoc_logo {
+  background-image: url(../img/echoSoc-logo.png);
+  width: 157px;
+  height: 46px;
+  margin: auto;
+}*/
+
+.echoSoc_content {
+  padding: 6px;
+  color: #6f6f6f;
+}
+
+.echoSoc_description li {
+  text-align: center;
+  list-style: none;
+  padding: 5px 0;
+  display: block;
+}
+
+.echoSoc_buttons {
+  display: block;
+  min-height: 23px;
+  position: relative;
+  margin: 0 auto;
+  padding: 10px 0;
+  overflow: hidden;
+
+  transform: scale(0.9);
+}
+
+.echoSoc_countdown {
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+.echoSoc_countdown span {
+  color: #63c2ff;
+  font-weight: bold;
+}
+
+.img-center {
+    display: block;
+    margin: 0 auto;
+}
+
+
+a{
+  color           : #9c3;
+  text-decoration : none;
+}
+
+.starRating:not(old){
+  display        : inline-block;
+  width          : 7.5em;
+  height         : 1.5em;
+  overflow       : hidden;
+  vertical-align : bottom;
+}
+
+.starRating:not(old) > input{
+  margin-right : -100%;
+  opacity      : 0;
+}
+
+.starRating:not(old) > label{
+  display         : block;
+  float           : right;
+  position        : relative;
+  background      : url('/pdfsite/img/star-off.svg');
+  background-size : contain;
+}
+
+.starRating:not(old) > label:before{
+  content         : '';
+  display         : block;
+  width           : 1.5em;
+  height          : 1.5em;
+  background      : url('/pdfsite/img/star-on.svg');
+  background-size : contain;
+  opacity         : 0;
+  transition      : opacity 0.2s linear;
+}
+
+.starRating:not(old) > label:hover:before,
+.starRating:not(old) > label:hover ~ label:before,
+.starRating:not(:hover) > :checked ~ label:before{
+  opacity : 1;
+}
+.mobile { display:none; }
+@media only screen and (max-width:550px) { 
+.mobile { display:block; }
+.desktop { display:none; }
+}
